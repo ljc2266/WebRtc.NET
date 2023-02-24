@@ -103,6 +103,8 @@ namespace Native
 		if (peer_connection_.get())
 		{
 			local_video.reset();
+			remote_video.reset();
+			remote_audio.reset();
 
 			for (auto it = active_streams_.begin(); it != active_streams_.end(); ++it)
 			{
